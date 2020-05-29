@@ -1,0 +1,75 @@
+$muted-color: hsla(14, 12%, 24%, 0.41);
+
+.card{
+  position: relative;
+  min-width: 300px;
+  max-width: 800px;
+  border: 1px solid #e5e2e2;
+  border-bottom: 3px solid #e5e2e2;
+  padding: 1rem;
+  box-shadow: 7px 8px 5px -9px rgba(0,0,0,0.75);
+
+  legend span{
+    position: absolute;
+    top: -12px;
+    left: -1px;
+    background-color: #21abcd;
+    color: #fff;
+    padding: 0.3rem 0.21rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    width: 10rem;
+    text-align: center;
+    font-weight: bold;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -12px;
+      border-top: 11px solid transparent;
+      border-bottom: 0px solid transparent;
+      border-left: 12px solid #2193cdfa;
+      top:0;
+    }
+  }
+
+  .card-header{
+    h3 {
+      margin: 0;
+      font-size: .9rem;
+    }
+
+    .muted-text{
+      font-style: italic;
+    }
+  }
+
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .undo-i{
+      margin-left: 10px;
+      border: 1px solid $muted-color;
+      padding: 0.21rem 0.41rem;;
+      border-radius: 2px;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+
+    .down-i{
+      color: $muted-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.muted-text{
+  color: $muted-color;
+  font-size: 0.7rem;
+}
