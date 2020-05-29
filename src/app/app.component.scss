@@ -1,11 +1,16 @@
 $muted-color: hsla(14, 12%, 24%, 0.41);
 
+$theme-primary: #21abcd;
+$theme-primary-dark: #2193cdfa;
+
+$default-border-color: #e5e2e2;
+
 .card{
   position: relative;
   min-width: 300px;
   max-width: 800px;
-  border: 1px solid #e5e2e2;
-  border-bottom: 3px solid #e5e2e2;
+  border: 1px solid $default-border-color;
+  border-bottom: 3px solid $default-border-color;
   padding: 1rem;
   box-shadow: 7px 8px 5px -9px rgba(0,0,0,0.75);
 
@@ -13,7 +18,7 @@ $muted-color: hsla(14, 12%, 24%, 0.41);
     position: absolute;
     top: -12px;
     left: -1px;
-    background-color: #21abcd;
+    background-color: $theme-primary;
     color: #fff;
     padding: 0.3rem 0.21rem;
     font-size: 0.6rem;
@@ -28,7 +33,7 @@ $muted-color: hsla(14, 12%, 24%, 0.41);
       right: -12px;
       border-top: 11px solid transparent;
       border-bottom: 0px solid transparent;
-      border-left: 12px solid #2193cdfa;
+      border-left: 12px solid $theme-primary-dark;
       top:0;
     }
   }
